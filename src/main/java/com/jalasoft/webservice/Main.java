@@ -9,14 +9,18 @@
 
 package com.jalasoft.webservice;
 
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
 /**
- * Main class.
+ * Implements the spring boot application client.
  *
  * @author Paolo Sandoval
  * @version 1.0
  */
+@SpringBootApplication
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello!!!");
+        SpringApplication.run(Main.class, args);
     }
 }
